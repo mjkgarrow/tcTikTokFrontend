@@ -1,5 +1,4 @@
 import ResponsiveImage from "./ResponsiveImage";
-import { timeAgo } from "../utils/helpers";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
