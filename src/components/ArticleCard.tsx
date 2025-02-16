@@ -43,7 +43,7 @@ export default function ArticleCard({
     <div
       ref={targetRef}
       className="snap-start h-screen md:p-14 place-content-center">
-      <div className="relative bg-white h-full w-full overflow-hidden grid grid-cols-1 grid-rows-1 text-gray-50 md:aspect-square lg:aspect-[4/3] md:h-auto md:rounded-lg md:shadow-2xl after:absolute after:inset-0 after:bg-gradient-to-t after:from-black/50 after:to-transparent after:pointer-events-none">
+      <div className="relative mx-auto bg-white h-full w-full overflow-hidden grid grid-cols-1 grid-rows-1 text-gray-50 md:aspect-square lg:aspect-[4/3] md:w-auto md:rounded-lg md:shadow-2xl after:absolute after:inset-0 after:bg-gradient-to-t after:from-black/50 after:to-transparent after:pointer-events-none">
         <figure className="col-start-1 row-start-1">
           <ResponsiveImage
             src={data.image}
