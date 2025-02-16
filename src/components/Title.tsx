@@ -12,7 +12,7 @@ export default function Title({
       href={articleUrl}
       target="_blank"
       className="hover:text-gray-200 text-gray-50 group">
-      <p className="text-base font-bold line-clamp-2 w-fit">
+      <p className="text-base font-bold line-clamp-2 w-fit text-balance">
         {title}
         <span>
           <svg
