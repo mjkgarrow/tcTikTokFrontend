@@ -113,7 +113,7 @@ function App() {
         />
       </a>
       <svg
-        className="h-10 w-10 max-md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 animate-bounce"
+        className="h-8 w-8 max-md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 animate-bounce"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 511.93 511.93">
         <path d="M476.738 280.436a10.623 10.623 0 0 0-15.04 0l-195.2 195.2V10.996c0-5.333-3.84-10.133-9.067-10.88-6.613-.96-12.267 4.16-12.267 10.56v464.96l-195.093-195.2c-4.267-4.053-10.987-3.947-15.04.213a10.763 10.763 0 0 0 0 14.827L248.365 508.81a10.623 10.623 0 0 0 15.04 0l213.333-213.333c4.16-4.054 4.16-10.881 0-15.041" />
