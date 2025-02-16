@@ -23,7 +23,7 @@ function App() {
 
       setData((prevData) => [...prevData, ...newData]);
     } catch (error) {
-      // console.error("Error fetching articles:", error);
+      console.error("Error fetching articles...");
     } finally {
       setLoading(false);
     }
@@ -66,37 +66,11 @@ function App() {
             (totalHeight - currentScrollDepth) / window.innerHeight
           );
 
-          //
+          // Trigger refresh if within 3 slides of the last slide
           if (distanceFromBottom <= 3) {
             setNearBottom(true);
           }
         },
-        // onUp: (self) => {
-        //   const target = self.vars.target;
-
-        //   // Type-safety for DOM properties
-        //   if (!(target instanceof HTMLElement)) return;
-
-        //   let currentScrollDepth = target.scrollTop;
-
-        //   if (
-        //     currentScrollDepth === 0 &&
-        //     self.deltaY < -30 &&
-        //     !refreshingRef.current
-        //   ) {
-        //     console.log("pull up");
-        //     refreshingRef.current = true;
-
-        //     if (!loading) {
-        //       setLoading(true);
-        //       fetchArticles();
-        //     }
-
-        //     setTimeout(() => {
-        //       refreshingRef.current = false; // Reset refreshing state after a delay
-        //     }, 1000);
-        //   }
-        // },
         tolerance: 5,
       });
     },
@@ -120,7 +94,7 @@ function App() {
       </svg>
       <div
         ref={scrollRef}
-        className="card-container overflow-y-scroll snap-y snap-mandatory h-screen scroll-smooth relative">
+        className="card-container overflow-y-scroll snap-y snap-mandatory h-dvh scroll-smooth relative">
         {data.map((article, index) => (
           <ArticleCard data={article} key={index} />
         ))}
