@@ -8,11 +8,8 @@ export default function Title({
   articleUrl: string;
 }) {
   return (
-    <a
-      href={articleUrl}
-      target="_blank"
-      className="hover:text-gray-200 text-gray-50 group">
-      <p className="text-base font-bold line-clamp-2 w-fit text-balance">
+    <a href={articleUrl} target="_blank" className="hover:text-gray-200 group">
+      <h1 className="text-xl font-bold line-clamp-2 w-fit text-balance">
         {title}
         <span>
           <svg
@@ -27,7 +24,7 @@ export default function Title({
             />
           </svg>
         </span>
-      </p>
+      </h1>
       <p className=" mt-2 text-xs line-clamp-3">{description}</p>
     </a>
   );
