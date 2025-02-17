@@ -5,7 +5,7 @@ type OnRefresh = () => Promise<any>;
 
 export interface PullToRefreshResult {
   // Updated to allow null since useRef can initially be null.
-  ptrRef: React.RefObject<HTMLElement | null>;
+  ptrRef: React.RefObject<HTMLDivElement | null>;
   pullDistance: number;
   refreshing: boolean;
 }
@@ -14,7 +14,7 @@ const usePullToRefresh = (
   onRefresh: OnRefresh,
   threshold: number = 60
 ): PullToRefreshResult => {
-  const ptrRef = useRef<HTMLElement | null>(null);
+  const ptrRef = useRef<HTMLDivElement | null>(null);
   const startYRef = useRef(0);
   const [pullDistance, setPullDistance] = useState(0);
   const [refreshing, setRefreshing] = useState(false);
